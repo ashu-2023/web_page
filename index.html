@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashutosh sharma</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+      /* css reset */
+      body {
+        font-family: 'Lato', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url("img/bg.jpg") no-repeat center center/cover;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        color: white;
+      }
+      .left img{
+        width: 79px;
+      }
+      .left{ 
+        display: inline-block;
+        background-color: black;
+        /* border: 2px solid red; */
+        position:absolute;
+        left: 34px;
+        top: 22px;
+        text-align: center;
+        line-height: 15px;
+      }
+      .mid{ 
+        display: block;
+        width: 36%;
+        margin: 22px auto;
+        /* border: 2px solid rgb(0, 255, 0); */
+      }
+      .right{
+        position:absolute;
+        right: 34px;
+        top: 22px;
+        display: inline-block;
+        /* border: 2px solid rgb(247, 228, 20); */
+      }
+      .navbar{
+        display: inline-block;
+      }
+      .navbar li{ 
+        padding: 12px;
+        font-size: 20px;
+        display: inline-block;
+      }
+      .navbar li a{
+        color: white;
+        text-decoration: none;
+      }
+      .navbar li a:hover,.navbar li a:active{
+        text-decoration: underline;
+        color: rgb(233, 241, 11);
+      }
+      .btn{
+        padding: 6px;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .btn:hover{
+        background-color: gray;
+      }
+      .container{
+        border: 2px solid white;
+    margin: 215px 40px;
+    padding: 30px 41px;
+    width: 30%;
+    border-radius: 24px;
+      }
+      /* we are targeting specially because we dont want to get affected */
+     .form-group input{
+      font-family: 'Lato', sans-serif;
+      font-size: 25px;
+      text-align: center;
+        display: block;
+        width: 344px;
+        margin: 4px auto;
+        border: 2px solid black;
+        border-radius: 8px;
+      }
+      .container h1{
+        text-align: center;
+      }
+      .container button{
+        display: block;
+        width: 23%;
+        margin: auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+    <!-- left box for logo -->
+    <div class="left">
+        <img src="data:image/jpeg;base64,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" alt="">
+        <div>
+            ashu fitness
+        </div>
+    </div>
+    <!-- mid box for navbar -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="page1.html">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">fitness calculator</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+    </div>
+    
+    <!-- right box for button -->
+    <div class="right">
+       <button class="btn">call us now</button>
+       <button class="btn"> email us</button>
+    </div>
+</header>
+<div class="container">
+    <h1>join the best in your locality</h1>
+    <form action="noaction.php">
+      <div class="form-group">
+      <input type="text" name="" placeholder="enter your Name ">
+      <input type="text" name="" placeholder="enter your Age ">
+      <input type="text" name="" placeholder="enter your Gender ">
+      <input type="text" name="" placeholder="enter your Locality ">
+      <input type="number" name="" placeholder="enter your number">
+
+    </div>
+    
+    </form>
+    <button class="btn">submit</button>
+</div>
+  </body>
+</html>
